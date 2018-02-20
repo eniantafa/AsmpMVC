@@ -16,7 +16,7 @@ namespace AsmpMVC.Data.Models
         public MaintenanceCategory Category { get; set; }
         public string Item { get; set; }
         public MaintenancePriority Priority { get; set; }
-        public MainentanceStatus Status { get; set; }
+        public MaintenanceStatus Status { get; set; }
         public string Note { get; set; }
 
 

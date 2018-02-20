@@ -43,7 +43,7 @@ namespace AsmpMVC
             //Konfigurimi i servisit db
 
             services.AddDbContext<AppDbContext>(options =>
-            options.UseSqlServer());
+            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             
             // Add framework services.
             services.AddApplicationInsightsTelemetry(Configuration);
