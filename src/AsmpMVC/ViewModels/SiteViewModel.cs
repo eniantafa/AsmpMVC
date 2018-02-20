@@ -16,7 +16,7 @@ namespace AsmpMVC.ViewModels
         [Required(ErrorMessage = "This field is required")]
         public string SiteNumber { get; set; }
         public string HomeOwner { get; set; }
-        public int ContactNumber { get; set; }
+        public string ContactNumber { get; set; }
         public string ContactEmail { get; set; }
         public string HouseType { get; set; }
         public int ContractValueExGST { get; set; }

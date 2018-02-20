@@ -1,16 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27413.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6B7A45AC-A23E-48F3-BA99-605E4B86B6A7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7877869E-6D7C-43DA-A90C-A4A97BA639AD}"
-	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
-	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "AsmpMVC", "src\AsmpMVC\AsmpMVC.xproj", "{C060CB97-8C19-43E0-B0AF-78DEF9694D33}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsmpMVC", "src\AsmpMVC\AsmpMVC.csproj", "{C060CB97-8C19-43E0-B0AF-78DEF9694D33}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,5 +25,8 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C060CB97-8C19-43E0-B0AF-78DEF9694D33} = {6B7A45AC-A23E-48F3-BA99-605E4B86B6A7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B36FEE3-983D-473D-926A-A20002B896C1}
 	EndGlobalSection
 EndGlobal

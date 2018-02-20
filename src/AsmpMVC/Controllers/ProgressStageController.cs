@@ -1,5 +1,6 @@
 ﻿using AsmpMVC.Data;
 using AsmpMVC.Data.Models;
+using AsmpMVC.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
