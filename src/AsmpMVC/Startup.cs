@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using AsmpMVC.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace AsmpMVC
 {
@@ -28,11 +30,21 @@ namespace AsmpMVC
             Configuration = builder.Build();
         }
 
+
+
+
         public IConfigurationRoot Configuration { get; }
+
+
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //Konfigurimi i servisit db
+
+            services.AddDbContext<AppDbContext>(options =>
+            options.UseSqlServer());
+            
             // Add framework services.
             services.AddApplicationInsightsTelemetry(Configuration);
 
