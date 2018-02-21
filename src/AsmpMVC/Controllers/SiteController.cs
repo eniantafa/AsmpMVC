@@ -11,16 +11,11 @@ namespace AsmpMVC.Controllers
 {
     public class SiteController:Controller
     {
-
-
         private AppDbContext _context;
 
         public SiteController(AppDbContext context)
         {
             _context = context;
-        }
-        public SiteController()
-        {
         }
 
         // GET: Site
@@ -79,7 +74,7 @@ namespace AsmpMVC.Controllers
             oldSite.HomeOwner = site.HomeOwner;
             //futen vlerat e tjera
 
-            _context.Sites.Update(oldSite);
+            //_context.Sites.AddOrUpdate(oldSite);
             _context.SaveChanges();
 
             return View();

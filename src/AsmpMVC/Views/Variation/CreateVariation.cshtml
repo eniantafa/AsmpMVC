@@ -9,9 +9,6 @@
 @using (Html.BeginForm("CreateVariation", "Variation", FormMethod.Post))
 {
 
-
-    <form>
-
         <div class="form-group">
             @Html.LabelFor(m => m.VariationCode)
             @Html.TextBoxFor(m => m.VariationCode, new { @class = "form-control" })
@@ -74,7 +71,5 @@
         </div>
 
 
-        <button type="button" class="btn btn-primary">Save</button>
-    </form>
-
+        <button type="submit" class="btn btn-primary">Save</button>
 }

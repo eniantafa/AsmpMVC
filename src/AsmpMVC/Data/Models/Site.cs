@@ -16,7 +16,7 @@ namespace AsmpMVC.Data.Models
         [Required]
         public string SiteNumber { get; set; }
         public string HomeOwner { get; set; }
-        public int ContactNumber { get; set; }
+        public string ContactNumber { get; set; }
 
         [EmailAddress]
         public string ContactEmail { get; set; }
@@ -38,4 +38,3 @@ namespace AsmpMVC.Data.Models
 
     }
 }
-
