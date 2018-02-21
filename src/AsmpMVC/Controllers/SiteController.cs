@@ -1,5 +1,6 @@
 ﻿using AsmpMVC.Data;
 using AsmpMVC.Data.Models;
+using AsmpMVC.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -78,7 +79,7 @@ namespace AsmpMVC.Controllers
             oldSite.HomeOwner = site.HomeOwner;
             //futen vlerat e tjera
 
-            _context.Sites.AddOrUpdate(oldSite);
+            _context.Sites.Update(oldSite);
             _context.SaveChanges();
 
             return View();

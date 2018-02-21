@@ -14,6 +14,10 @@ namespace AsmpMVC.Data
         {
         }
 
+        public AppDbContext()
+        {
+        }
+
         public DbSet<Site> Sites { get; set; }
         public DbSet<Issue> Issues { get; set; }
         public DbSet<Maintenance> Maintenances { get; set; }
